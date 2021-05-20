@@ -41,7 +41,7 @@ Just copy the files to your host and follow the setup steps below.
 Open up the terminal and type in:
 
 ```bash
-$ pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 ### Edit config file
 Just insert your GPT-3 API key in `config.json`
@@ -60,5 +60,5 @@ your own and you are good to go (but do not change the paths of `config.json` an
 In order to chat with the bot, just start `main.py`
 
 ```bash
-$ python main.py
+python main.py
 ```
