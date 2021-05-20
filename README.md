@@ -1,17 +1,17 @@
 # Ciscodocs - GPT-3
 
-GPT-3 is a new NLP algorithm from OpenAI which produces stunning results. It is very good 
-in generalization and is adapts very well to new inputs. It can be "trained" by feeding it
-custom knowledge material in text form. When providing Cisco's documentation as a source
-of knowledge, it is possible to create a chatbot that is able to answer detailed questions
-about Cisco's products and services.
+GPT-3 is a relativelly new NLP algorithm from OpenAI which produces very impressive results. 
+It is very good in generalization and adapts very well to new inputs. It can be "trained" 
+by feeding it custom knowledge material in text form. When providing Cisco's documentation
+as a source of knowledge, it is possible to create a chatbot that is able to answer detailed 
+questions about Cisco's products and services. And this is exactly what I am trying to do right now.
 
-This is a WiP. So far, it is a simple offline python chatbot. However, the end goal is to
-create a publically available Webex bot based on GPT-3. Another limitation is that GPT-3
-is currently in beta state and therefore not really production ready. However, the first
-results are very promissing.
+This is a WiP. So far, it is a simple offline python chatbot trained only on the DNA Center data sheet.
+The end goal of course is to create a public available Webex bot based on a much bigger knowledge base.
 
-If you would like to contribute, please contact me via e-mail (mdemikho@cisco.com) or Webex. 
+But even with such a rather small "training set" the results are very promising:
+
+If you would like to contribute, please contact me via e-mail (mdemikho@cisco.com) or Webex.
 
 ---
 ## Table of Contents
