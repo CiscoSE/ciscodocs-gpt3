@@ -9,7 +9,7 @@ questions about Cisco's products and services. And this is exactly what I am try
 This is a WiP. So far, it is a simple offline python chatbot trained only on the DNA Center data sheet.
 The end goal of course is to create a public available Webex bot based on a much bigger knowledge base.
 
-But even with such a rather small "training set" the results are very promising:
+But even with such a rather small "training set" the results are very promising.
 
 If you would like to contribute, please contact me via e-mail (mdemikho@cisco.com) or Webex.
 
