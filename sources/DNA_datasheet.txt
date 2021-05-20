@@ -1,0 +1,856 @@
+###
+Introduction
+
+Cisco DNA Center is a powerful network controller and management dashboard that lets you take charge of your network, optimize your Cisco investment, and lower your IT spending. Cisco DNA Center provides a single dashboard for every fundamental management task to simplify running your network. With this platform, IT can respond to changes and challenges faster and more intelligently.
+
+●      Design: Design your network using intuitive workflows, starting with locations where your network devices will be deployed. Users of Cisco Prime Infrastructure and the Cisco Application Policy Infrastructure Controller Enterprise Module (APIC-EM) can simply import existing network designs and device images into Cisco DNA Center.
+
+●      Policy: Define user and device profiles that facilitate highly secure access and network segmentation based on business needs. Application policies allow your business-critical applications to provide a consistent level of performance regardless of network congestion.
+
+●      Provision: Use policy-based automation to deliver services to the network based on business priority and to simplify device deployment. Zero-touch device provisioning and software image management features reduce device installation or upgrade time from hours to minutes and bring new remote offices online with plug-and-play ease from an off-the-shelf Cisco device. Additionally, the Cisco Stealthwatch® Security Analytics service provisions network elements to send NetFlow and Encrypted Traffic Analytics (ETA) to Stealthwatch.
+
+●      Assurance: Cisco DNA Assurance enables every point on the network to become a sensor, sending continuous streaming telemetry on application performance and user connectivity in real time. This, coupled with automatic path-trace visibility and guided remediation, means network issues are resolved in minutes — before they become problems. Automated NetFlow switch configuration for Cisco Stealthwatch security provides detection and mitigation of threats, even when they are hidden in encrypted traffic.
+
+●      Platform: An open and extensible platform allows third-party applications and processes to exchange data and intelligence with Cisco DNA Center. This improves IT operations by automating workflow processes based on network intelligence coming from Cisco DNA Center.
+
+Cisco DNA Center is at the heart of the Cisco Digital Network Architecture, or Cisco DNA (https://www.cisco.com/go/dna), and is the only centralized intent-based network management system to bring all this functionality into an integrated controller and present it through a single pane of glass.
+###
+Licensing
+
+Cisco DNA Center is a software solution that resides on the Cisco DNA Center appliance. The solution receives data in the form of streaming telemetry from every device (switch, router, access point, and wireless access controller) on the network. This data provides Cisco DNA Center with the real-time information it needs for the many functions it performs. For a device to be authorized to send data to Cisco DNA Center, that device must be included in your company’s Cisco DNA software license subscription. Cisco encourages customers to purchase complete Cisco DNA Center functionality through a Cisco DNA Advantage or Premier license subscription. Limited Cisco DNA Center functionality is also available through a Cisco DNA Essentials license subscription. Wireless, switching, and SD-WAN and routing subscriptions are available for 3- and 5-year terms; wireless and switching are also available in a 7-year term. All Cisco DNA software license subscription options include embedded Cisco SWSS (software support and downloads).
+
+The links below open matrices detailing the main features included with the Cisco DNA Essentials, Cisco DNA Advantage, and Cisco DNA Premier licenses in each respective suite.
+###
+New features
+
+Cisco DNA Center’s latest release, 2.1.2.4, is a major update to this solution, with enhancements that greatly facilitate SDA policy and segmentation, identification of network endpoints, Wi-Fi 6 upgrades, power-over-Ethernet (PoE) management, and security and ITSM integrations. The main deliverables of Cisco DNA Center 2.1.2.4 are:
+
+●      Updated navigation: The Cisco DNA Center GUI now has more streamlined navigation through an easy-to-use menu with simplified headers. The new menu centralizes the user experience, making it easy to locate all functions and tasks in Cisco DNA Center. The user will see many new features, and all of the previous features in Cisco DNA Center. Users that are having trouble finding a feature in the new menu, can use global search to locate it. The menu has a black background that makes the menu options stand out clearly.
+
+●      Machine reasoning engine enhancements: Cisco DNA Center is now more intelligent. It adds to its already extensive AI/ML-enabled features with a greatly expanded Machine Reasoning Engine (MRE). This new MRE defines the next intelligence evolution and helps in complex workflows where the result of one action determines the next. It closely resembles how human beings themselves reason things out and accomplish multistep tasks. An example where Cisco DNA Center uses MRE is to find and fix potentially crippling routing loops that require a careful analysis spanning multiple devices. This allows your new IT team members to accomplish complex tasks instead of escalating them, and for your more seasoned IT team members it saves time by automating tedious workflows. For more information, read the blog: https://blogs.cisco.com/networking/machine-reasoning-is-the-new-ai-ml-technology-that-will-save-you-time-and-facilitate-offsite-netops
+
+●      AI endpoint analytics: This feature allows Cisco DNA Center to identify and classify endpoint devices on a campus network. Through the use of various profiling methods, including Deep Packet Inspection (DPI) and machine learning, AI endpoint analytics establishes visibility of what is on the network so that new endpoints can be authenticated and assigned an appropriate policy for network usage, security, and segmentation. For more information visit the following:
+
+◦    Informational page: https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-endpoint-analytics.html
+
+◦    White Paper: https://www.cisco.com/c/en/us/solutions/collateral/enterprise-networks/software-defined-access/nb-06-ai-endpoint-analytics-wp-cte-en.html?oid=wpretr023097
+
+◦    Podcast: https://soundcloud.com/user-327105904/s7e29-increase-visibility-and-enhance-security-with-cisco-ai-endpoint-analytics
+
+◦    Customer story 1: https://blogs.cisco.com/networking/north-carolina-dhhs-uses-ai-endpoint-analytics-to-simplify-network-control
+
+◦    Customer story 2: https://blogs.cisco.com/networking/adventist-health-deploys-ai-endpoint-analytics-to-keep-its-network-in-shape
+
+●      Group-based policy analytics: This is an application that runs on Cisco DNA Center and accelerates and simplifies the delivery of segmentation policies. It uses analytical models to visualize the activity between endpoint profiles, scalable groups, and host groups in order to verify that the network policies are optimizing performance and security. For more information visit the following:
+
+◦    Read the blog: https://blogs.cisco.com/networking/write-policies-for-right-segmentation
+
+◦    White Paper: https://www.cisco.com/c/en/us/solutions/collateral/enterprise-networks/software-defined-access/nb-06-gbp-zero-trust-security-wp-cte-pte-en.html?oid=wprswt024194
+
+◦    Analyst Paper: https://www.cisco.com/c/m/en_us/products/security/identity-services-engine/removing-the-complexities-from-network-segmentation.html
+
+◦    Recorded Webinar: https://engage2demand.cisco.com/LP=21776
+
+●      User-defined network: This new feature in Cisco DNA Center works in conjunction with a smartphone app in order to allow end users to install personal endpoint devices, such as TV streaming boxes, video game consoles, video doorbells, etc. User-defined network allows people who reside within a large campus network, such as students in a dorm or residents in a homecare facility, to create their own wireless network partitions. These end users can then remotely and securely deploy their private devices on this network. For more information visit the following:
+
+◦    Landing page: https://www.cisco.com/c/en/us/solutions/enterprise-networks/user-defined-network.html
+
+◦    Solution Overview: https://www.cisco.com/c/en/us/solutions/collateral/enterprise-networks/digital-network-architecture/nb-06-user-defined-nw-so-cte-en.html
+
+◦    Infographic: https://www.cisco.com/c/m/en_us/solutions/enterprise-networks/digital-network-architecture/nb-06-udn-infographic-cte-en.html?oid=ifgwls020989
+
+◦    Blog: https://blogs.cisco.com/networking/cisco-user-defined-network-defining-the-boundaries-of-your-network
+
+●      Wi-Fi 6 readiness dashboard: This new dashboard can prepare your network for the new Wi-Fi standard, verify your hardware and configuration compatibility, and check your capacity readiness. This visibility will speed your upgrade and ensure that you are upgrading the neediest locations first. After upgrading, advanced wireless analytics will indicate performance and capacity gains as a result of the Wi-Fi 6 deployment. For more information, read the two blogs below: https://blogs.cisco.com/networking/ciscos-ai-ml-can-make-your-wi-fi-6-upgrade-a-success
+https://blogs.cisco.com/networking/cisco-dna-your-fastest-route-to-wi-fi-6
+
+●      Power-over-Ethernet analytics: This feature provides visibility on the power loads that a switch is experiencing. Endpoint devices that are pulling too much power, as well as switches that are approaching overload, are flagged. Granular visibility shows the available power on any switch for quick installation of IoT endpoint devices.
+
+●      Traffic telemetry appliance: This hardware solution collects networking data, processes it, and provides streaming telemetry to Cisco DNA Center. This can be useful in areas of your network where you do not have devices that support the types of telemetry that you need to collect from the local network, including NetFlow, AVC, NBAR, NBAR2, etc. This appliance can also perform Deep Packet Inspection (DPI) on network traffic in order to support Cisco AI Endpoint Analytics. This is a strong solution for areas with only Layer 2 network devices or for branch offices with third-party switches that do not support transmission of real-time telemetry. For more information, see the data sheet below: https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/dna-traffic-telemetry-appliances/datasheet-c78-744352.html
+
+●      Cisco Umbrella™ integration: This feature allows Cisco Umbrella to be deployed across sites and SSIDs from within the Cisco DNA Center dashboard. Cisco Umbrella provides DNS-layer security and is one of the quickest and most effective ways to improve your security stack. Read the blog: https://blogs.cisco.com/networking/cisco-dna-center-and-cisco-umbrella-automate-your-journey-towards-dns-security
+
+●      ServiceNow / ITSM closed loop integration: Cisco DNA Center can now auto-resolve open ticket numbers in ServiceNow and other ITSM platforms. When Cisco DNA Assurance detects that a fault has been resolved, it will check for an ITSM ticket number. If one exists, it will send a ticket status change with the ticket number to the ITSM system, which will automatically close the open ticket in that system. Read the blog: https://blogs.cisco.com/ciscoit/cisco-dna-center-and-servicenow-integration
+###
+Assurance features
+
+For more information on Cisco DNA Assurance: cisco.com/go/assurance
+
+Table 1.        Cisco DNA Assurance features and benefits
+
+Feature
+
+Description and benefits
+
+Overall health dashboard
+
+The main Assurance dashboard, which gives a high-level overview of the health of every network device and client on the network, wired and wireless. Provides the top 10 global issues and allows administrator to expand views by geographical site, device list, client list, or topology.
+
+Network health dashboard
+
+General overview of the operational status of every network device managed through Cisco DNA Center. Any poorly connected devices or communication issues will be highlighted, with suggested remediation.
+
+Client health dashboard
+
+General overview of the operational status of every client connected to the network and managed through Cisco DNA Center. Any poorly connected clients or communication issues will be highlighted, with suggested remediation.
+
+Application health dashboard
+
+General overview of the health of all applications on the network. Includes a special section on applications that have been tagged as business relevant. Business-relevant application issues are highlighted, with suggested remediation for any anomalies.
+
+Wireless sensor dashboard
+
+Overview of tests that have been run using Cisco Aironet™ Active Sensors. Shows overall tests, connectivity statistics, and top wireless issues discovered by sensors. Includes test results for Dynamic Host Configuration Protocol (DHCP), DNS, host reachability, RADIUS, email, Microsoft Exchange Server, web, FTP, and a complete IP SLA for data throughput speed, latency, jitter, and packet loss. Guided remediation for any test failures.
+
+Streaming telemetry
+
+Enables network devices to send near-real-time telemetry information to Cisco DNA Center, reducing delays in data collection. Some of the other benefits of streaming telemetry include:
+
+●  Low and quantifiable CPU overhead
+●  Optimized data export (key performance indicators [KPIs], events)
+●  Event-driven notifications
+Device 360 and Client 360
+
+An Assurance feature allowing viewing and troubleshooting devices or clients from any angle or context. Included are information on health trends, topology, application experience, and KPIs.
+
+Path trace
+
+Allows the operator to visualize the path of an application or service from the client through all devices and to the server. A common, and critical, troubleshooting task that normally requires 6 to 10 minutes is displayed instantly upon clicking on a client or application. Troubleshoots issues along the network path.
+
+●  Run a path trace from source to destination to quickly get key performance statistics for each device along the network path
+●  Identify Access Control Lists (ACLs) that may be blocking or affecting the traffic flow
+Network time travel
+
+Allows the operator to see device or client performance in a timeline view to understand the network state when an issue occurred. Allows an operator to go back in time up to 14 days and see the cause of a network issue, instead of trying to re-create the issue in a lab.
+
+●  Rewind time to when the issue occurred
+●  See a history of critical events
+●  All the information on the user or network device changes to the selected time
+On-device analytics
+
+Assurance and analytics are performed on a Cisco switch, router, or wireless controller where the anomaly was discovered. Critical metrics can be identified and immediately acted on before an incident occurs. KPIs that are core to business operations can be maintained in real time, and close to the users that rely on them.
+
+Cisco AI Network Analytics
+
+Using AI and machine learning, Cisco AI Network Analytics drives intelligence in the network, empowering administrators to improve performance and issue resolution accurately and effectively. We are taking network analytics to a new level where noise and false positives are significantly reduced and enabling customers to very accurately identify issues, trends, anomalies, and root causes.
+
+Intelligent issue-detection and analysis
+
+●  AI-driven personalized baselining: No two networks are the same. AI-driven technologies can learn the user trends, services, and application metrics that are specific to your network. Cisco DNA Assurance can then create a customized performance curve for analytical decisions. The AI-driven baseline for the performance parameters that are unique to your network is constantly adapted as your network grows and changes. From there, the AI-driven analytics engine (both on premises and in the Cisco cloud) can make accurate decisions for what is normal and what is not, based on this personalized baseline.
+●  AI-driven anomaly detection: This capability surfaces any deviation from our AI-created personalized baseline for this network, allowing Cisco DNA Center to make sense of all the network data. The system can accurately detect performance issues and ignore unusual but harmless network anomalies. This reduces noise while accurately identifying anomalies that have the greatest impact on your network. AI-driven predictive analytics and proactive insights allow users to anticipate and prevent failures. Here, the machine learning engine can predict increases in Wi-Fi interference, onboarding delays, office traffic load, etc. This is because, in IP networks, a problematic event is often preceded by a benign event or series of events. By learning how series of events are correlated to one another, predictive analytics can help network administrators anticipate the unexpected.
+●  AI-driven accelerated remediation: Cisco AI Network Analytics provides accelerated remediation through machine learning, which identifies the most critical variables related to the root cause of a given problem. This helps users detect issues and vulnerabilities, perform complex root cause analysis (using a machine reasoning engine), and execute corrective actions faster than ever. In coming releases, we will enable machine reasoning to execute the logical troubleshooting steps that an engineer would perform in order to resolve a problem. Both of these capabilities accelerate remediation, making your team more precise in problem solving and more productive overall.
+●  The addition of an intelligent Machine Reasoning Engine (MRE) allows for further intelligence in Cisco DNA Center. Included is the ability to discover Layer 2 spanning tree loops in your nonfabric (legacy Layer 2) network. Additionally, the MRE will scan current switch inventory for outdated images, Cisco Product Security Incident Response Team (PSIRT) alerts, and suspicious configurations. These abilities are outlined further below under “AI Analytics Security Advisories.”
+Extended application visibility to switch and wireless controllers
+
+Application visibility allows Cisco DNA Assurance to monitor a user’s application usage, even from a switch or wireless controller. By using switches and wireless controllers, Cisco DNA Center customers will have a complete view of application visibility across the campus network infrastructure.
+
+Wi-Fi Analytics for Apple iOS clients
+
+A joint development with Apple, Wi-Fi Analytics for Apple iOS offers Cisco DNA Assurance insights into the performance and experience of iOS clients (iPhone/iPad) on the wireless network. It allows the administrator to view wireless performance from the perspective of the iOS client.
+
+●  Supports per-device-group policies and analytics
+◦    Client details, such as iPhone model and iOS information
+
+●  Provides insights into the client’s view of the network
+◦    Basic Service Set Identifier (BSSID)
+
+◦    Received Signal Strength Indicator (RSSI)
+
+◦    Channel number
+
+●  Provides clarity regarding the reliability of connectivity
+◦    Client reasons, such as error codes for last disconnection
+
+Samsung client analytics
+
+Client device profile information (model, OS version, sales code) and more than 20 onboarding error states from the client. Cisco's partnership with Samsung allows a Cisco network to get the client’s point of view of the network — what access points it sees, the reasons for disconnections, and the current state of the user experience — provided through Cisco DNA Assurance.
+
+Wireless sensor advancements
+
+Location-based test templates for running sensor tests, external WebAuth assessment for guest onboarding to Cisco Identity Services Engine (ISE), location-based sensor heatmap, Sensor 360 with Access-Point (AP) neighbor map view, enhanced day-0 Cisco DNA Center discovery, and dedicated wireless backhaul, including the following:
+
+●  Improved day-0 discovery of sensors with dedicated wireless backhaul and secure shell (SSH) support with Extensible Authentication Protocol – Transport Layer Security (EAP-TLS) support on wireless backhaul
+●  Customers have the ability to standardize on the proactive sensor tests that they want to run across hundreds of sites that are part of the enterprise in a consistent fashion by leveraging sensor test templates and flexible scheduling capabilities.
+●  Sensors can now also simulate the guest-onboarding experience in ISE.
+●  Once the tests are set up, customers now have the ability to centrally monitor them from the newly built heatmap-based sensor dashboard that can help pinpoint sites having problems and then drill down to specific locations where more client onboarding is failing or where there is poor Radio-Frequency (RF) coverage, using location heatmaps and Sensor 360.
+Enhancement to day-N sensor management use cases, including sensor status monitoring, SSH control with user name, LED flash control, name change with bulk change options, site hierarchy management, and support for bundle access for Cisco Technical Assistance Center (TAC) troubleshooting
+
+Executive summary report
+
+Weekly and daily reports providing executives a summary of how their network is performing, with insights into network devices, clients, and applications:
+
+●  View a summary of weekly and daily network and client health and application performance
+●  View a comparison with and changes made since the previous period
+●  Analyze the number of network devices and clients seen on the network
+●  View the top client types seen on the network
+●  Analyze issue trends and top issues
+Custom network health scores
+
+Enables the customer to customize how the health score in Cisco DNA Assurance is computed. Customers express a liking for the health score abstraction but have always asked for the ability to control how health scores are computed. We have given them that capability with this release.
+
+Application experience
+
+Tracks performance of predefined “critical business applications.” Shows user experience and performance metrics. Provides specialized rapid troubleshooting per application and per client. Provides unparalleled visibility and performance control over the applications that are critical to your core business, on a per-user basis. Multimedia monitoring uses Perfmon processing for Real-Time Protocol (RTP) streams, allowing teams to verify the quality of critical real-time applications such as multimedia. URL monitoring provides visibility into cloud-based (URL-based) applications so that their performance is optimized. Application experience provides users the performance they need on the applications key to their company role.
+
+Intelligent Capture
+
+Intelligent Capture uses network sensors within the Aironet Active Sensor and the Aironet 4800 AP to provide advanced troubleshooting for wireless issues. It includes anomaly-based packet captures, on-demand RF scanning, real-time client location, and Wi-Fi application analytics. This feature offers a high level of wireless service guarantee based on detailed and proactive analysis of wireless performance per access point or per Wi-Fi client. It allows system administrators to prepare for special events or VIP visits, or simply to troubleshoot a stubborn wireless issue.
+
+Wi-Fi 6 readiness dashboard
+
+Checks network devices for support of critical Wi-Fi 6 requirements (IPv6, wireless controller software versions, switch support, etc.) and looks for software or hardware that is not compatible. Categorizes wireless clients by Wi-Fi version (protocol) and indicates areas where upgrade is most urgent. Shows wireless system performance following upgrade. The Wi-Fi 6 readiness and analytics feature can prepare your network for the new standard, verify your hardware and configuration compatibility, and check your capacity readiness. Wi-Fi 6 dashboard allows customers to visualize two main aspects: first, the readiness of their network with respect to Wi-Fi 6 across several different sites and locations; key aspects of readiness assessment include how many Wi Fi 6—capable clients are seen in the network, does the user have the right AP model to support Wi-Fi 6, are the APs and Wireless LAN Controllers (WLCs) running the right OS version, is the Wi-Fi 6 configuration enabled, etc. Second, the Wi-Fi 6 dashboard allows the user to visualize the benefits of the Wi-Fi 6 network in terms of higher capacity, superior connectivity, and lower latencies on Cisco DNA Analytics and Assurance. After upgrading, advanced wireless analytics will indicate performance and capacity gains as a result of the Wi-Fi 6 deployment. The dashboard contains the following windows:
+
+●  Insights window: overview of Wi-Fi 6 readiness with insights and suggestions to prepare the network prior to upgrade
+●  Wi-Fi 6 network readiness: graphical view of overall network readiness
+●  Top locations by Wi-Fi 6: readiness based on your network design locations (for example, buildings, floors, branch sites, etc.)
+●  Client distribution by capability: graphical representation of clients support for protocol (Wi-Fi 6, 11ac, 11n, 11abg)
+●  AP distribution by protocol: graphical representation of AP support for protocol (Wi-Fi 6, 11ac, 11n, 11abg)
+●  Wireless airtime efficiency: graph of bytes per millisecond, indicating the overall efficiency of the wireless network
+●  Wireless latency by client count: latency of APs organized by number of clients per AP
+●  Wireless latency by traffic: graph of latency organized by total number of packets
+●  Traffic distribution by MCS index: overall wireless network traffic organized by wireless modulation rate (MCS)
+Power-over-Ethernet analytics
+
+Provides visibility on the power loads that a switch is experiencing. Endpoint devices that are pulling too much power, as well as switches that are approaching overload, are flagged. Granular visibility shows available power on any switch for quick installation of IoT endpoint devices.
+
+ServiceNow / ITSM closed loop integration
+
+Cisco DNA Center can now auto-resolve open ticket numbers in ServiceNow and other ITSM platforms. When Cisco DNA Assurance detects that a fault has been resolved, it will check for an ITSM ticket number. If one exists, it will send a ticket status change with the ticket number to the ITSM system, which will automatically close the open ticket in that system.
+
+Table of correlated insights
+
+Table 2.        Correlated insights
+
+Category
+
+Insights
+
+Wireless issues
+
+Client onboarding
+
+●  Association failures
+●  Authentication failures
+●  IP address failures
+●  Client exclusion
+●  Excessive onboarding time
+●  Excessive authentication time
+●  Excessive IP addressing time
+●  AAA, DHCP reachability
+Client experience
+
+●  Throughput analysis
+●  Roaming pattern analysis
+●  Sticky client
+●  Slow roaming
+●  Excessive roaming
+●  RF, roaming pattern
+●  Dual-band clients prefer 2.4 GHz
+●  Excessive interference
+●  Apple iOS client disconnect
+Network coverage and capacity
+
+●  Coverage hole
+●  AP license utilization
+●  Client capacity
+●  Radio utilization
+Network device monitoring
+
+●  Availability
+●  Crash, AP join failure
+●  High availability
+●  CPU, memory
+●  Flapping AP, hung radio
+●  Power supply failures
+Sensor issues
+
+Sensor onboarding
+
+●  Association failures
+●  Authentication failures
+●  IP address failures
+●  Sensor exclusion
+●  Excessive onboarding time
+●  Excessive authentication time
+●  Excessive IP addressing time
+●  AAA, DHCP reachability
+Sensor experience
+
+●  Throughput analysis
+●  Outlook web response time
+●  Web server response time
+●  SSH server response time
+●  Mail server response time
+●  FTP server response time
+●  Excessive radio interference
+Routing issues
+
+Router health
+
+●  High CPU
+●  High memory
+Routing technologies
+
+●  BGP AS mismatch, flap
+●  OSPF adjacency failure
+●  Enhanced Interior Gateway Routing Protocol (EIGRP) adjacency failure
+Connectivity
+
+●  Interface high utilization
+●  LAN connectivity down/flap
+●  IP SLA to SP gateway connectivity
+Switching issues (nonfabric)
+
+Client onboarding
+
+●  Client or device DHCP
+●  Client or device DNS
+●  Client authentication or authorization
+Switch
+
+●  CPU, memory, temperature
+●  Line card
+●  Modules
+●  Power over Ethernet (PoE) power
+●  Ternary Content-Addressable Memory (TCAM) table
+SD-Access issues
+
+Border and edge reachability
+
+●  Control plane reachability
+●  Edge reachability
+●  Border reachability
+●  Routing protocol
+●  MAP server
+Data plane
+
+●  Border and edge connectivity
+●  Border node health
+●  Access node health
+●  Network services DHCP, DNS, AAA
+Policy plane
+
+●  ISE or pxGrid connectivity
+●  Border node policy
+●  Edge node policy
+Client onboarding
+
+●  Client or device DHCP
+●  Client or device DNS
+●  Client authentication or authorization
+Switch
+
+●  CPU, memory, temperature
+●  Line card
+●  Modules
+●  PoE power
+●  TCAM table
+###
+Automation features
+
+For more information on Cisco DNA Automation: cisco.com/go/dnaautomation
+
+Table 3.        Cisco DNA Automation features and benefits
+
+Feature
+
+Description and benefits
+
+Network discovery
+
+Automatically discovers and maps network devices to a physical topology with detailed device-level data. The discovery function uses the following protocols and methods to retrieve device information, such as IP addresses, neighboring devices, and hosts connected to the device:
+
+●  Cisco Discovery Protocol (CDP)
+●  Link Layer Discovery Protocol (LLDP) for endpoints
+●  IP Device Tracking (IPDT) and Address Resolution Protocol (ARP) entries for host discovery
+●  LLDP Media Endpoint Discovery (LLDP-MED) for discovering IP phones and some servers
+●  Simple Network Management Protocol (SNMP) versions 2 and 3
+Network Information Database (NIDB)
+
+Periodically scans the network to create a “single source of truth” for IT. This inventory includes all network devices, along with an abstraction for the entire enterprise network. It keeps an updated inventory of devices and software images on that device for version control. The NIDB provides data to applications (such as SWIM and Cisco EasyQoS) so that the correct device and image version are used. It allows applications to be device independent, so configuration differences between devices aren’t a problem.
+
+Meraki® discovery and integration
+
+Provides for the discovery of all Meraki devices on the network and integrates them into the Cisco DNA Center dashboard. It provides for a single pane of glass for both Cisco and Meraki devices.
+
+Network design and profile-based management
+
+Allows you to manage your network in a hierarchical fashion by letting you add areas and buildings on a geospatial map. You can start by defining your sites, then add buildings to sites, and finally add floors with detailed floor plans to the buildings. Cisco DNA Center lets the user define profiles, which consist of common network settings such as device credentials, DHCP, DNS server, AAA server, IP address pool, etc. Wireless settings such as SSIDs and RF profiles can be created globally and customized at site levels. These profiles form the basis for network automation.
+
+Network Plug and Play (PnP)
+
+Zero-touch provisioning for new device installation. Allows off-the-shelf Cisco devices to be provisioned simply by connecting them to the network. Cisco Network PnP provides a highly secure, scalable, seamless, and unified zero-touch-deployment experience for customers across Cisco's entire enterprise network portfolio of wired and wireless devices. Deploy new devices in minutes, and without onsite support visits. Eliminate repetitive tasks and eliminate staging. Network PnP reduces the burden on enterprises by greatly simplifying the deployment process for new devices, which can significantly lower Operating Expenditures (OpEx) as well. For more details, refer to the data sheet for the Network Plug and Play application:
+
+https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Plug-and-Play/solution/guidexml/b_pnp-solution-guide.html
+
+Software Image Management (SWIM)
+
+Manages software upgrades and controls the consistency of image versions and configurations across your network. Speeds and simplifies the deployment of new software images and patches. Pre- and post-checks help ensure no adverse effects from an upgrade. This is an easy way to build a central repository of software images and apply them to devices. Administrators can mark software images as golden for a device family, allowing them to upgrade devices to the software image and patch versions that are in compliance with the golden versions defined in the repository.
+
+●  Golden images: Intent-based network upgrades allow for image standardization, much desired by network administrators.
+●  Pre- and post-checks allow network administrators more control over and visibility into network upgrades.
+Patches are supported in Cisco DNA Center from intent to pre- and post-checks in the same way that we manage regular images.
+
+ROMMon support for SWIM
+
+The SWIM ROMMon upgrade feature optimizes already scheduled downtime by allowing users to join ROMMon upgrades with regular upgrades. The ROMMon feature in SWIM eases the task of upgrading ROMMon images on supported Cisco devices.
+
+Device replacement and RMA workflows
+
+Workflow templates allow for the replacement (RMA) of switches and routers. Includes restoration of IOS, configurations, and licenses. Also completes device replacement in operational systems such as Cisco ISE, certificate servers, and Cisco DNA Center inventory. Saves time and retains existing setup, licenses, and KPI trends.
+
+PMP Bulk Update (day 0)
+
+Simplified workflows for updating device images and configurations via easy day-0 steps.
+
+Fog Director
+
+Ability to manage and view Cisco industrial devices via connection with Cisco Fog Director. Fog Director delivers the capability to manage large-scale production deployments of Cisco IOx-enabled fog applications.
+
+SMU patching
+
+Provides patching for Software Maintenance Upgrade (SMU) recommendations and reduces the effort required to manually search for, identify, and analyze SMUs that are needed for a device. Cisco DNA Center automatically provides SMU management for multiple Cisco IOS® XR platforms and releases. Automates the patching process and allows most bug fixes to be patched with minimal network disruption.
+
+Branch deployment automation
+
+Simplified workflows for physical and virtual branch automation; day-0 router/NFV design. Onboard WAN devices and services via easy steps:
+
+1. Configure network settings, service provider, and IP pools.
+
+2. Design a router or virtual profile.
+
+3. Assign to sites and provision network devices.
+
+Enterprise Network Functions Virtualization (ENFV) automation
+
+Facilitates branch virtualization on any hardware device, Cisco or third-party. Saves time in setting up network virtual services. Supports existing branch migration without hardware upgrade. This feature includes full NFV management.
+
+Wireless automation
+
+Intent-based workflows for simplified wireless deployment and automation:
+
+●  Network profiles: A container of wireless properties that can represent single or multiple sites
+●  Simplified guest and SSID creation
+●  Advanced RF support for wireless networks
+●  A single workflow to enable FlexConnect or centralized wireless deployment
+●  PnP provisioning for APs
+●  IP ACL support
+●  Access and access control policy for SD-Access Wireless only
+Device tagging
+
+An administrator can tag network devices in order to associate devices that share a common attribute. For example, you can create a tag and use it to group devices based upon a platform ID, Cisco IOS release, or location. Allows for grouping of devices based on specialized needs.
+
+Policy creation
+
+Allows the creation of policies based on business intent for a particular part of the network. Users can be assigned policies for the services that they consume, and these policies follow them throughout the network. Policies are translated by Cisco DNA Center into network-specific and device-specific configurations that can be adjusted dynamically based on network conditions. Of foundational importance for intent-based networking, policies define the business intent that is desired and allow the network to guarantee services.
+
+Application policy creation
+
+Allows policies to be assigned to applications based on business relevance. These applications can then be attached to sites (locations) where the policy should be applied. This feature allows business-critical applications to have greater QoS priority in the sites where their use is relevant. It is important for mission-critical applications such as machine-to-machine control in manufacturing or life-saving devices in healthcare, as well as for business-critical applications such as video in customer experience centers or voice in support sites.
+
+Rogue management and aWIPS
+
+Support for the detection of Rogue and aWIPS threats on your campus network from within Cisco DNA Center. The Rogue and aWIPS dashboard provides detailed threat analysis and a global view of all rogue access points detected in the network, with insight into the highest priority threats so that they can be quickly identified. The Threat 360 view on this dashboard provides further details on any specific threat. This includes a map view for quick location, and all affected clients.
+
+StackWise Virtual support
+
+Base automation (inventory, discovery, SWIM, topology, template programmer) and assurance support for Cisco Catalyst® 9500 and 9400 Series StackWise Virtual switches. StackWise Virtual technology on the Cisco Catalyst 9000 platform allows the clustering of two physical switches together into a single logical entity, resulting in enhancements in all areas of network design, including high availability, scalability, management, and maintenance. Customers can now use Cisco DNA Center to manage the StackWise Virtual device, along with monitoring the health and status of StackWise Virtual ports and links.
+
+Device ID certificate provisioning during Plug and Play (PnP)
+
+API support for provisioning of device ID certificates during Plug-and-Play device claims. With this feature, the customer will be able to push the device ID certificate to the spoke routers during Plug and Play. Certificates for spoke routers need to be pushed as part of the day-0 configuration for a critical customer deployment so that when spokes come online after day-0 configuration and the certificate is applied to them, they can establish VPN (DMVPN) connectivity to hubs right away.
+
+Meraki wireless provisioning
+
+Provision SSIDs in Meraki APs through Cisco DNA Center. This feature allows Meraki access points to be assigned SSIDs through Cisco DNA Center, without having to open the Meraki dashboard application.
+
+Enterprise Network Functions Virtualization (ENFV): Advanced configuration mode
+
+Provides advanced configurations for ENFV topologies and routing, such as switched port analyzer (SPAN) sessions, port mirroring, and packet capture. Integrates advanced configuration support for ENVF into Cisco DNA Center capabilities. This allows greater management of remote virtual servers via Cisco DNA Center.
+
+Firewall (ASA) support
+
+Base automation support (inventory, topology, SWIM, and configuration template) for ASA firewalls running ASA software
+
+AI endpoint analytics
+
+This feature allows Cisco DNA Center to identify and classify endpoint devices on a campus network. Through the use of various profiling methods, including Deep Packet Inspection (DPI), machine learning, and telemetry from network devices. AI endpoint analytics establish visibility of what is on the network so that new endpoints can be authenticated and assigned an appropriate policy for network usage, security, and segmentation.
+
+Group-based policy analytics
+
+An application that runs on Cisco DNA Center that accelerates and simplifies the delivery of segmentation policies. This application uses analytical models to visualize the activity between network segments, endpoint profiles, scalable groups, and host groups in order to verify that the network policies are optimizing performance and security.
+
+User-defined network
+
+This new feature in Cisco DNA Center works in conjunction with a smartphone app in order to allow end users to install personal endpoint devices, such as TV streaming boxes, video game consoles, video doorbells, etc. User-defined networks allow people that reside within a large campus network, such as students in a dorm or residents in a homecare facility, to create their own wireless network partition. These end users can then remotely and securely deploy their private devices on this network.
+
+Cisco Umbrella integration
+
+This feature allows Cisco Umbrella to be deployed from within the Cisco DNA Center dashboard. Cisco Umbrella provides DNS-layer security, stopping malware early, before performance impact.
+###
+SD-Access features
+
+For more information on Cisco SD-Access: cisco.com/go/sdaccess
+
+Table 4.        Cisco SD-Access 2.1.2.4 features and descriptions
+
+Feature
+
+Description
+
+Fabric infrastructure
+
+●  Automated external connectivity handoff using Virtual Routing and Forwarding Lite (VRF-lite).
+●  “Fabric in a box” without a control plane
+●  Bonjour support for Cisco SD-Access
+Fabric assurance
+
+●  KPIs, 360-degree views for client, AP, Wireless LAN Controller (WLC), and switch
+◦    Underlay and overlay correlation
+
+◦    Device health: fabric border and edge, CPU, memory, temperature, line cards, modules, stacking, PoE power, TCAM
+
+◦    Data plane connectivity: reachability to fabric border, edge, control plane, and DHCP, DNS, and AAA
+
+◦    Policy: fabric border and edge policy, ISE, and pxGrid connectivity
+
+◦    Client onboarding: client and device DHCP and DNS, client authentication and authorization
+
+Fabric wireless
+
+●  Wireless guest with ISE (Central Web Authentication)
+●  Wireless guest support on separate guest border, control plane, and wireless guest support as a separate Virtual Network (VN) on the enterprise border and control plane
+●  Same SSID for traditional and fabric on the same WLC (mixed mode)
+●  WLC Stateful Switchover (SSO)
+●  Wireless multicast
+●  Multiple virtual networks for guest
+●  Embedded wireless support on fabric edge
+●  Guest web passthrough
+●  Sleeping client timeout
+Management
+
+●  Pre-check and post-check workflow validations
+●  ISE Primary Administration Node (PAN) High Availability (HA) support (includes pxGrid and Monitoring And Troubleshooting [M&T])
+●  Distributed ISE Policy Service Node (PSN) support (two per site)
+●  Same ISE instance for fabric and traditional (brownfield) deployments
+●  Cisco Secure Access Control System (ACS) and ISE for TACACS+ authentication of network devices
+●  HA support for Cisco DNA Center
+●  Policy-protected Command-Line Interface (CLI) configuration
+●  Software image and patch management
+●  License management
+●  Backup and restore
+●  Task scheduler
+●  Group-based access control policies
+Distributed campus
+
+●  Automated intersite connectivity
+●  End-to-end policy and segmentation
+Fabric infrastructure optimizations
+
+●  Device sensor for host onboarding
+●  Server connectivity for fabric edge
+●  Support for up to six control-plane nodes
+●  LAN automation hardening
+●  Cisco DNA Center template-based configurations in fabric deployments for key use cases
+●  Border handoff enhancements: 4-byte ASN support
+●  Two fabrics in a box at a site are supported without embedded wireless.
+●  LAN Automation support for Cisco Nexus ® 9500 as intermediate node but not as seed
+Simplified migrations
+
+●  Layer 2 handoff at border: common subnet inside and outside fabric for SD-Access migration in brownfield network
+●  Layer 2 flooding: fabric support for end hosts that require Layer 2 flooding; for example, building management systems, audio-visual equipment, etc.
+●  Cisco Catalyst 9500H series support for Layer 2 handoff
+SD-Access extension for IoT
+
+Automation functionality is extended to the fabric edge to support IoT deployments where "extended node" devices are outside the "carpeted network." Allows greater functionality to wired and wireless devices in applications such as industrial process control, digital cities, oilfields, mining, and outdoor video surveillance.
+
+IPv6 endpoint support
+
+This feature introduces the capability to support IPv6 wired and wireless endpoints that are dual stacked.
+
+Group-based policy
+
+A major new capability in Cisco DNA Center for configuring, viewing, and editing groups and policies. Through a logical matrix interface, administrators can manage user access controls and segmentation using scalable groups, instead of IP addresses or VLANs. IT teams can create and manage SGTs from within Cisco DNA Center without having to open ISE or other network policy servers. Scale for group-based policy is as follows:
+
+●  Up to 4000 scalable groups
+●  Up to 500 access contracts
+●  Up to 25,000 policies
+Third-party NPS
+
+Support for third-party Network Policy Servers (NPS) has been a request from our users, and now it is here. Cisco DNA Center can now integrate with either your third-party NPS or Cisco ISE – the choice is yours.
+
+AI-Analytics security advisories
+
+This feature uses the Machine Reasoning Engine (MRE) to identify potential vulnerabilities in the network. The MRE can be dynamically updated from the Machine Reasoning Knowledge Base to identify new security issues. Cisco DNA Center supported switches and routers can be scanned to identify software images that have a security advisory or security advisories. Identifying security advisories is a very time-consuming task that can be automated through the advanced MRE technology.
+
+NetFlow automation for Encrypted Traffic Analytics (ETA) support
+
+In order for Stealthwatch to be able to detect malware in encrypted traffic, network devices must be configured to send NetFlow and encrypted traffic to Stealthwatch. This new Cisco DNA Center feature allows users to configure select switches and routers to send data to Stealthwatch by using the Stealthwatch Security Analytics service. The service also allows users to configure select switches to send NetFlow to Stealthwatch for devices that do not support ETA.
+
+Authentication enhancements
+
+●  Users can now change authentication mode from open to closed without having to remove the device from the fabric.
+●  The site-specific authorization template will enable customers to have a unique template for each site and continue to have a global authorization template.
+●  Critical VLAN will not be pushed by default using Cisco DNA Center templates.
+●  Seamless authorization changes will provide granularity and allow the user to make authentication changes without removing the device from the fabric.
+●  Users can have different authentication templates based on the deployment model.
+If the ISE goes down, the customer will have the flexibility to choose not to immediately move all the clients into a single critical VLAN/pool.
+
+Cisco Software-Defined Access (SD-Access): Layer 2 intersite
+
+Layer 2 sites can be connected via SD-Access transit; /32s are propagated to the transit control plane. Previously, we could not use the same IP space across fabric sites. This use case is centered around sharing an IP subnet across multiple fabric-enabled sites and for allowing intersite communication for Layer 2 traffic over SD-Access transit.
+
+Unique multicast group
+
+For Layer 2 intersite, there will be a unique multicast group per site. The blast radius of Layer 2 flooding is contained within this unique multicast group.
+
+SD-Access: StackWise Virtual Link (SVL) support at border, edge, control plane, and Fabric in a Box
+
+SVL support has been added on edge and border nodes. Base automation will discover manually configured SVL devices. The user can configure fabric roles such as edge/border or border + edge (B+E). SVL not only brings physical redundancy but also provides dual homing to the devices/servers connected to the border/edge. With B+E, (noncolocated) control plan users can connect servers at the border. Cisco Catalyst 9400/9500/9500H Series Switches, when configured as StackWise Virtual, can be added to the fabric as an edge, border, border with collocated control plane, or Fabric-in-a-Box device.
+
+Cisco Catalyst 9600 Series Switches, when configured as StackWise Virtual, can be added to the fabric as a border, a control plane, or a border with colocated control plane.
+
+Note the following:
+
+●  Edge nodes that are connected as SVL support only wired clients.
+●  SVL configuration on the device should be done manually before adding the device to the inventory.
+VLAN-based L2VNI
+
+Provides Layer 2 channeling from edge to firewall or to any other node that acts as a gateway. Firewall can be used as a gateway if there are strict security compliances for intra-VLAN and inter-VLAN traffic inspection.
+
+Cisco Catalyst 9000 Series Switches as Policy-Extended Nodes (PENs)
+
+Many campus deployments have extended enterprises with multiple endpoints on a network spread across several miles. For security and compliance, all the endpoints need to be centrally managed. This feature provides a secure and automated device onboarding solution and central policy automation and management. Except for the Cisco Catalyst 9600 series, all other Cisco Catalyst 9000 Series Switches can act as PENs.
+
+IP-directed broadcast
+
+This feature provides the ability to wake up power-save hosts by sending a subnet-directed broadcast packet or magic packets.
+
+Multicast enhancement for Cisco Vision™: custom Source-Specific Multicast (SSM) and external Rendezvous Point (RP)
+
+With external RP automation workflow and custom SSM range, users can now bring up devices that require custom SSM, such as Cisco Vision, into the SD-Access fabric. Sites such as convention centers and stadiums can automate their digital billboards. External RP support removes the need for a dedicated RP within each site. This further reduces the TCO of a small site.
+
+SD-Access: extended node: 802.1X and MAC Authentication Bypass (MAB); multicast; Authentication, Authorization, and Accounting (AAA); secure extended nodes
+
+802.1X, MAB, AAA, multicast, and secure support on extended nodes:
+
+●  Customers can onboard Internet of Things (IoT) devices, APs, and end devices with 802.1X and MAB authentication.
+●  Devices connected to extended nodes can join scalable groups for secure onboarding. This feature will add value for customers who want to leverage microsegmentation.
+Extended nodes will have multicast support. IoT devices such as surveillance devices can join multicast groups. The source and receiver can be hanging from extended nodes.
+
+SD-Access: new devices (Shockley, Hyper-V-WLC, Cisco Industrial Wireless 3700 Series [IW3700], Axel, Duplo)
+
+Support for Shockley, Hyper-V-WLC, IW3700, Axel, and Duplo has been added to SD-Access
+
+Airgap support
+
+Customers now have the ability to install or upgrade to the latest software versions in an airgap (when the appliance is not connected to the public network/Internet). This enables a customer to stay current with Cisco DNA Center versions while complying with their security policy.
+
+Scale: filtering for IP pools
+
+Cisco DNA Center can enforce filtering for IP pools that were configured via third-party IP Address Management (IPAM) products. This capability provides increased IPAM integration with Cisco DNA Center.
+
+Multi-site remote border
+
+Multi-site remote border now enables users to configure policies for connecting to an external network (such as DMZ) through specific exit points (borders) in the SDA fabric.
+
+With multi-site remote border traffic for any VN, for example: the guest at each site will tunnel back to a central location over VXLAN, allowing a single subnet to be deployed across all sites. This is ideal for environments where the requirement is for all untrusted traffic to be sent to a firewall at the DMZ.
+
+IPv6 support for Cisco Catalyst 9800, 9800-L, and eWLC controllers
+
+With this Cisco DNAC release, IPv6 is supported on Cisco Catalyst 9800 Series Wireless Controllers, eWLCs, and as embedded wireless solutions. IPv6 support is enabled in the overlay of the fabric. The underlay continues to be IPv4. Endpoints can have IPv4 addresses or dual-stack (IPv4+IPv6) addresses.
+
+IPv6 address assignment can be static IP, using SLAAC and/or DHCP. SLAAC can be enabled only if CIDR is /64. IPv6 DHCP and DNS are needed for pooling with IPv6. The ISE, syslog, and SNMP server are still IPv4.
+
+N+1 rolling upgrade
+
+N+1 rolling AP upgrade with SDA wireless enables a wireless controller image upgrade using N+1 staging controller. N+1 rolling upgrade is only applicable for Cisco Catalyst 9800 wireless controllers. N+1 High Availability (HA) is supported on AireOS on Cisco Catalyst 9800 and the Embedded Wireless Controller (EWC).
+
+N+1 rolling AP upgrades help ensure seamless client connectivity. Customers can upgrade wireless networks without network downtime when the same version skew is supported between the controller and the APs. This enables the APs to be upgraded in a staggered manner, while still being connected to the same controller. If one WLC goes down, the AP should be able to join a secondary WLC on that fabric site. Each WLC can have its own stack, which means the first SSO should work, and only if the whole stack goes down would the AP move to a secondary embedded wireless.
+
+FlexConnect Over The ToP (OTT) with SD-Access
+
+Historically with the SD-Access solution, there was a requirement to have a wireless LAN controller in every SD-Access site.
+
+With the FlexConnect OTT feature, wireless traffic from a remote site or branch can tunnel through Control and Provisioning of Wireless Access Points (CAPWAP) protocol to a central WLC through the Over the ToP model. FlexConnect enables customers to configure and control Access Points (APs) in a branch or remote office from the corporate office through a Wide Area Network (WAN) link without deploying a controller in each office.
+
+Supported platforms:
+
+●  Cisco 5520 Wireless LAN Controller, Cisco 8540 Wireless LAN Controller, Cisco Catalyst 9800 Series Wireless Controller, Cisco Catalyst 9800-CL Wireless Controller
+●  Cisco Aironet 1800, 2800, 3800, and 4800 access points
+●  Cisco Aironet 9115, 9117, 9120, and 9130 access points
+###
+System capabilities
+
+Table 12.     Cisco DNA Center system capabilities
+
+Feature
+
+Description and benefits
+
+Role-Based Access Control (RBAC)
+
+Allows users to be mapped to one of the four predefined roles. The role determines what types of operations a user can perform within the system.
+
+Backup and restore
+
+Supports complete backup and restore of the entire database for added protection
+
+ISE integration
+
+Integrates with ISE through pxGrid or API for fabric overlay support
+
+Workflows
+
+Cisco DNA Center workflows are a step-by-step guide through a particular task; for example, “Create a role,” “Refresh AP,” etc. Workflows can be paused and revisited through the “in-progress” library on the workflow homepage. The workflow homepage can be found by clicking the menu icon on the GUI and clicking on “Workflows.” The home page will have a library of workflows along with in-progress workflows.
+
+Activity center
+
+The activity center is a centralized space to find audit logs and scheduled tasks. Audit logs record system events that occurred, when and where they occurred, and which users initiated them. With audit logging, configuration changes to the system are logged in separate log files for auditing. The scheduled tasks tab allows you to view upcoming, in-progress, completed, and failed administrative tasks, such as OS updates or device replacements.
+###
+Platform capabilities
+
+Table 13.     Cisco DNA Center platform capabilities
+
+Feature
+
+Description and benefits
+
+Northbound REST APIs
+
+The Cisco DNA Center platform supports Representational State Transfer (REST) APIs at the northbound layer for programmability. The Cisco DNA Center API provides support for the following features:
+
+●  Discovery, device inventory, and network topology
+●  SWIM, Plug and Play (PnP), wireless, SDA, and application policy
+●  Template programmer and command runner
+●  Assurance: site, device, and client health monitoring and path tracing
+●  NFV provisioning
+●  Configuring event management notifications through APIs
+IT Service Management (ITSM) integration
+
+The ITSM integration minimizes the need for handoffs, deduplicates issues, and optimizes processes for proactive insights and faster remediation. Out-of-the-box integration exists with ServiceNow. The generic APIs exposed by the Cisco DNA Center platform enable partners and developers to integrate with any ITSM system.
+
+IP Address Management (IPAM) integration
+
+This integration allows for a seamless import of IP pools for Cisco DNA Center workflows from external IPAM systems and the synchronization of IP pool and subpool usage information between the two systems. Out-of-the-box integration exists with Infoblox and BlueCat. The Cisco DNA Center platform provides generic APIs to integrate with any IPAM system.
+
+Events and notifications
+
+The Cisco DNA Center platform webhooks allow third-party applications to receive notifications and listen to any events detected by Cisco DNA Assurance, automation, and other task-based operational workflows.
+
+Multivendor SDK
+
+The Cisco DNA Center Multivendor Device Pack SDK allows partners to add support for managing third-party devices directly through Cisco DNA Center.
+###
+Meraki integration
+
+For existing Meraki branch customers who want to explore using Cisco DNA Center and Cisco Catalyst 9000 family switches, or for customers with mixed environments, Cisco DNA Center now offers a single management pane of glass. This is an API-driven dashboard integration that supports all existing Meraki hardware and software at no additional license cost.
+Meraki and Cisco DNA Center integration
+
+Features and benefits of Meraki integration
+
+●      Single dashboard inventory across all platforms (Meraki, Cisco Catalyst, Cisco Integrated Services Routers [ISRs], Aironet)
+
+●      Up-or-down status of all devices in a single platform
+
+●      Use existing Meraki API keys; no additional license required
+
+●      Combined topology mapping of hybrid environments
+
+●      Ability to assign SSIDs to Meraki access points from within Cisco DNA Center (Release 2.1.2.4 and newer)
+###
+Appliance scale
+
+This new, second-generation (Gen2) of the Cisco DNA Center appliance is available in three form factors and comes with the Cisco DNA Center image preloaded on it and ready for installation. Notice that the entry-level Gen2 appliance (DN2-HW-APL) has the same size, performance, and capacity specifications as the first-generation (Gen1) Cisco DNA Center appliance (DN1-HW-APL). The reason for the change is to put all three Gen2 appliances on the newer Cisco UCS® M5 series of servers. If you currently have a Gen1 appliance (based on the Cisco UCS M4 series), there is no need to upgrade, and there is no advantage to upgrading, since both Gen1 and Gen2 entry appliances are based on the same 44-core processing units, have the same performance specifications, and support the same capacity of devices, sites, IP-pools, etc. Customers looking for greater performance, in order to support more capacity, are advised to upgrade to the 56-core “midsize” Gen2 appliance (DN2-HW-APL-L) or the 112-core “large” Gen2 appliance (DN2-HW-APL-XL). Also note that the appliance DN1-HW-APL is currently end of life (no longer being sold) and software maintenance will end in June 2022.
+###
+Appliance specifications
+
+The Cisco DNA Center appliance is available in three form factors and comes with the Cisco DNA Center image preloaded on it and ready for installation. For more detailed information on these Cisco UCS appliances, click on the data sheet link beside each hardware series in Table 15.
+###
+Roles and privileges
+
+Table 17.     Role-based access control
+
+Role
+
+Privilege
+
+Network-Admin-Role
+
+Users with this role have full access to all of the network-related Cisco DNA Center functions. They do not have access to system-related functions, such as application management, users (except for changing their own passwords), and backup and restore.
+
+Observer-Role
+
+Users with this role have view-only access to all Cisco DNA Center functions.
+
+Telemetry-Admin-Role
+
+Users with this role have the ability to perform system-level functions within Cisco DNA Center.
+
+Super-Admin-Role
+
+Users with this role have full access to all of the Cisco DNA Center functions. They can create other user profiles with various roles, including those with the Super-Admin-Role.
+###
+Device support
+
+Cisco DNA Center provides coverage for Cisco enterprise switching, routing, and mobility products. For a complete list of Cisco products supported, please download our support spreadsheet, which is regularly updated:
+
+https://www.cisco.com/c/en/us/support/cloud-systems-management/dna-center/products-device-support-tables-list.html
+###
+Cisco environmental sustainability
+
+Information about Cisco’s environmental sustainability policies and initiatives for our products, solutions, operations, and extended operations or supply chain is provided in the “Environment Sustainability” section of Cisco’s Corporate Social Responsibility (CSR) Report.
+
+Reference links to information about key environmental sustainability topics (mentioned in the “Environment Sustainability” section of the CSR Report) are provided in the following Table 18.
+
+Cisco makes the packaging data available for informational purposes only. It may not reflect the most current legal developments, and Cisco does not represent, warrant, or guarantee that it is complete, accurate, or up to date. This information is subject to change without notice.
+###
+Product usage telemetry
+
+Product usage telemetry provides valuable information about the status and capabilities of the Cisco DNA Center appliance. Cisco DNA Center is configured to automatically connect and transmit product usage data to Cisco. Product usage telemetry is used by Cisco to improve appliance lifecycle management for IT teams who have deployed Cisco DNA. Collecting this data helps the product teams serve customers better. This data and related insights enable Cisco to proactively identify potential issues, improve services and support, facilitate discussions to gather additional value from new and existing features, and assist IT teams with inventory report of license entitlement and upcoming renewals.
+
+All product usage telemetry data is transmitted to Cisco through an encrypted channel. The categories of data collected in the product usage telemetry are the Cisco.com ID, system telemetry, feature usage telemetry and network device (for example, switch or router) inventory, and license entitlement. The collection of product usage telemetry will be enabled by default and cannot be disabled from the product. Customers may contact the Cisco Technical Assistance Center (TAC) for changes in collection settings.
+
+For detailed product usage telemetry information collected, please see Table 20.
+Cisco.com
+
+●  Cisco.com user ID
+Identify customer account
+
+System
+
+●  Deployment information (Cisco DNA Center appliance serial number, Cisco DNA Center appliance platform, Cisco DNA Center appliance machine ID)
+●  Connectivity with Cisco DNA Center
+●  Operational metrics (CPU, memory, file system, uptime) for pods
+●  Signed End-User License Agreement (EULA) flag
+●  Application stack and packages deployed
+Identify potential issues in customers’ environments to prevent problems and improve the product
+
+Feature usage
+
+●  Customer dwell time in application UI pages
+●  Site_member_details – name of site, instance UUID of device, support level of device, device family, host name
+●  Assurance usage: number of sites, area, building, floor, Wireless LAN Controller (WLC), switch, Access Point (AP), number of clients (wired and wireless) and health score, sensor counts, sensor tests count, AI network analytics configuration flag, AP count with RF stats enabled, number of anomaly captures enabled, number of data packet captures enabled, network telemetry max input rate (NetFlow, syslogs, traps)
+●  SD-Access usage: number of fabrics created, number of fabric domains per domain type, number of devices per fabric role by site, number of edge nodes and of border nodes and of control-plane nodes by device type, number of clients on fabric, number of access contracts, number of scalable group tags, number of virtual networks by site, number of IP pools, number of SSIDs, Cisco Identity Services Engine (ISE) version and status, number of group-based policies, number of access policy contracts, number of Cisco ACI ® scalable groups, number of APs and WLCs in fabric, number of each transit type, number of rogue AP/client messages, number of fabric sites by authentication mode, number of ports by static port assignment
+●  Automation usage: number of devices provisioned using PnP, number of PnP devices by source, number of golden images and image repository details, number of successful/failed image activations and/or distributions, number of SMU images by type, number of application policies created and/or deployed, number of favorite applications, number of custom applications (sets), number of consumer applications, number of queueing profiles, number of excluded devices, number of devices in each policy, number of draft policies, number of policies using nondefault queueing profiles, device controllability check, site area/building/floor counts, number of SSA enablement/disablement tasks by status, number of SSA precheck failures by type and successes/failures per device family, Stealthwatch registration status, number of devices by SSA-enabled status, number of devices with security advisory match, number of security advisory scans, vManage integration status, MRE root cause analysis count and duration, number of MRE user feedbacks, number of devices with CVSS scores, number of devices by replacement status, WAB SDG node count, number of onboarding templates created and provisioned successfully on devices, number of devices with templates applied, number of network profiles by site and namespace
+●  DNACaaP usage: number of event subscriptions by state, DaaS-runtime usage
+Facilitate customer adoption and customer value
+
+Network device inventory and license entitlement
+
+●  Network device inventory (serial number, software version, platform ID, reachability errors). Number of devices per device support level, number of devices per device role, number of port types per device type, IDP instances enabled, number of devices by Ethernet channel control method, number of devices by aclType associated site information, uptime in days by device type, host count by device type, number of devices by configuration type
+●  License entitlement information (network device type, IP address of network device, Cisco Smart Software Manager registration status, Cisco DNA Center subscription level, hardware support contract coverage, number of days until license expires)
+Assist customers in tracking and maintaining license entitlement and renewals
+
+For information on Cisco DNA Center privacy, please refer to Cisco’s Personal Data Privacy page: https://www.cisco.com/c/en/us/about/trust-center/data-privacy.html#~privacydatadocs
+###
+Cisco Capital
+
+Flexible payment solutions to help you achieve your objectives
+
+Cisco Capital® makes it easier to get the right technology to achieve your objectives, enable business transformation, and help you stay competitive. We can help you reduce the total cost of ownership, conserve capital, and accelerate growth. In more than 100 countries, our flexible payment solutions can help you acquire hardware, software, services and complementary third-party equipment in easy, predictable payments. Learn more.
+
+For more information
+
+See how Cisco DNA Center helps you move faster, lower costs, and reduce risk: https://cisco.com/go/dnacenter.
+###
